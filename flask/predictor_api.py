@@ -9,13 +9,18 @@ about whether Flask is working. A short check is run at the bottom of the file.
 
 import pickle
 import numpy as np
+from sklearn.externals import joblib
 
 # lr_model is our simple logistic regression model
 # lr_model.feature_names are the four different iris measurements
-with open("static/models/lr.pkl", "rb") as f:
-    lr_model = pickle.load(f)
+lr_model = joblib.load('/Users/randy/Documents/GitHub/Twitch_Chat_Harassment/notebooks/twitch_models.p')
+feature_names = lr_model.keys()
 
-feature_names = lr_model.feature_names
+
+# with open("static/models/lr.pkl", "rb") as f:
+#     lr_model = pickle.load(f)
+#
+# feature_names = lr_model.feature_names
 
 
 def make_prediction(feature_dict):

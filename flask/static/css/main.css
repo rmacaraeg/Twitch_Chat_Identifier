@@ -1,9 +1,15 @@
-/* because we are specifying body below, we 
-are affecting our body*/ 
+/* because we are specifying body below, we
+are affecting our body*/
 body{
-	background: lightblue;
+	background: white;
 }
 /* we can see how the rules we set for color 'cascade':*/
 h1{
-	background: blue;
+	background: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
