@@ -31,7 +31,7 @@
     body{
       background-image: url("static/images/gifs/ezgif.com-rotate.gif"), url("static/images/gifs/ezgif.com-crop.gif");
       background-size: auto;
-      background-position: right center, left center;
+      background-position: right 10%, left 10%;
       background-size: 20%;
       background-attachment: fixed;
       /* background-position: 25% 25%, 75% 25%; */
@@ -44,20 +44,16 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
-          <div style="max-width:500px; margin-left: auto; margin-right: auto;">
+          <div style="max-width:25%; margin-left: auto; margin-right: auto;">
             <center>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Twitch_logo.svg" alt="Twitch Logo" align="middle">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Twitch_logo.svg" alt="Twitch Logo">
             </center>
-            <div style="text-align: center;">
-              <h1 class="headertext">
-                <br>
-                Chat Classifier
-              </h1>
-            </div>
           </div>
 
   <form action="/">
     <div style="text-align: center;">
+				<br>
+				<h1 class="headertext">Chat Classifier</h1>
         <br>
         Input a word or phrase to get its toxicity levels:
         <br>
@@ -113,11 +109,15 @@
 									<td class="column2">{{ (100 * prediction[5]['prob']) | round}}%</td>
 						</tbody>
 					</table>
+					<br>
+					<div style="text-align: center; color: #808080;">
+					<a href="https://www.linkedin.com/in/jeremy-chow/">Jeremy Chow</a> and
+					<a href="https://www.linkedin.com/in/randysm/">Randy Macaraeg</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 
 
