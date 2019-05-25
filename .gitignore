@@ -1,0 +1,8 @@
+chat_logs
+notebooks/models.p
+/Users/randy/Documents/GitHub/Twitch_Chat_Harassment/Harassment-Classifier-App/static/models/models.p
+toxic_comment_classification/*
+Harassment-Classifier-App/static/models/models.p
+notebooks/test_char_features_vectorizer.p 
+notebooks/train_char_features_vectorizer.p
+notebooks/GoogleNews-vectors-negative300.bin.gz
