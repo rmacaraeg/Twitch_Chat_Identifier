@@ -177,6 +177,8 @@ table * {
 }
 table td, table th {
   padding-left: 8px;
+  /* padding-right: 20px; */
+  /* padding: 1% 1% 1% 1%; */
 }
 table thead tr {
   height: 47px;
